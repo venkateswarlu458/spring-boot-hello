@@ -25,4 +25,11 @@ public class RandomNumberEndpoint {
         ret.put("id", id.toString());
         return ret;
     }
+
+     @RequestMapping(value = "/", produces = "application/json")
+    public String Hello() {
+        
+        return "This is from  hello world spring boot application!";
+    }    
+    
 }
